@@ -1,0 +1,90 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+form input{
+    width: 400px;
+    height: 40px;
+    text-indent: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.create__pro{
+    padding: 0 470px;
+}
+form select{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    text-indent: 20px;
+    font-size: 16px;
+}
+.product__name{
+    text-align: center;
+    margin-bottom: 20px;
+    color: dodgerblue;
+    display: block;
+}
+.btn__create__pro{
+    width: 150px;
+    border: none;
+    height: 40px;
+    border-radius: 15px;
+    background: dodgerblue;
+    color: #fff;
+    transition: .3;
+    display: block;
+    margin: auto;
+}
+.btn__create__pro:hover{
+    cursor: pointer;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    background: #fff;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1242px) {
+    .create__pro{
+        padding: 0 400px;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .create__pro{
+        padding: 0 350px;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .create__pro{
+        padding: 0 230px;
+    }
+}
+
+@media screen and (max-width: 668px){
+    .create__pro{
+        padding: 0 150px;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .create__pro{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    form input{
+        width: 370px;
+    }
+    form select{
+        width: 370px;
+    }
+}

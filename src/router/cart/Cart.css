@@ -1,0 +1,8 @@
+.cart{
+    min-height: 500px;
+}
+.cart__title{
+    color: dodgerblue;
+    text-align: center;
+    margin: 40px;
+}

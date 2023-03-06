@@ -1,0 +1,100 @@
+.payment{
+    width: 100%;
+    height: 550px;
+    background: rgb(238, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__part__payment{
+    width: 430px;
+    height: 430px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+.payment__title{
+    font-size: 38px;
+    color: #13306a;
+}
+.intro__payment{
+    width: 400px;
+    font-size: 17px;
+    margin-top: 20px;
+    line-height: 25px;
+    color: #8e8e95;
+}
+.inp__payment{
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-indent: 15px;
+    font-size: 17px;
+    border: 1px solid #8e8e95;
+    outline: none;
+}
+.payment__btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: dodgerblue;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.payment__btn p {
+  position: relative;
+  color: #fff;
+}
+.payment__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: blue;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.payment__btn:hover::before {
+  left: 0;
+}
+.payment__btn:hover {
+  color: #fff;
+}
+.smth{
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+
+
+@media screen and (max-width: 470px) {
+    .main__part__payment{
+        width: 400px;
+        height: auto;
+        padding: 10px 10px;
+    }
+}
+
+
+@media screen and (max-width: 412px){
+    .main__part__payment{
+        padding: 15px 15px;
+        width: 350px;
+    }
+    .intro__payment{
+        width: 300px;
+    }
+    .inp__payment{
+        font-size: 14px;
+    }
+}

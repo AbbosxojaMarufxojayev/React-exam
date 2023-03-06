@@ -1,0 +1,142 @@
+.products{
+    width: 100%;
+    height: auto;
+    background: #e9edf4;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.products__container{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+}
+.img__part__products{
+    width: 100%;
+    height: 50%;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+.desc__part__products{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+.img__part__products img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cart__div{
+    width: 30px;
+    height: 30px;
+    background: dodgerblue;
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart__div svg{
+    color: aliceblue;
+    font-size: 21px;
+    transform: translateX(-2px);
+}
+.heart__icon{
+    position: absolute;
+    top: 50px;
+    color: rgb(87, 82, 82);
+    right: 15px;
+    font-size: 28px;
+}
+.cart__div,
+.heart__icon:hover{
+    cursor: pointer;
+}
+.desc__part__products{
+    padding-top: 5px;
+}
+.name{
+    text-align: center;
+    transition: .2s;
+}
+.name:hover{
+    color: dodgerblue;
+    cursor: pointer;
+}
+.del__price,
+.price{
+    text-align: center;
+    margin-top: 10px;
+}
+.smth__del{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.price{
+    margin-bottom: 10px;
+}
+.btn__buy{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: dodgerblue;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    font-weight: 600;
+    margin-top: 30px;
+    display: block;
+    margin: auto;
+}
+.btn__buy p {
+  position: relative;
+  color: #fff;
+}
+.btn__buy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: blue;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn__buy:hover::before {
+  left: 0;
+}
+.btn_buy:hover {
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 1156px) {
+    .products{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 1066px) {
+    .products{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .products{
+        grid-template-columns: 1fr 1fr;
+    }
+}
