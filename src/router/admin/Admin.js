@@ -13,7 +13,6 @@ import { LOG_OUT } from "../../context/action/actionType"
 
 
 function Admin() {
-  const dispatch = useDispatch()
 
   return (
     <div className='admin'>
